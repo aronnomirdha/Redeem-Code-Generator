@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Redeem Code Generator</h1>
+
+        <div class="form-group">
+            <label for="code-pattern">Code Pattern:</label>
+            <input type="text" id="code-pattern" placeholder="e.g. XXXX-XXXX-XXXX-XXXX" value="XXXX-XXXX-XXXX-XXXX">
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity of Codes:</label>
+            <input type="number" id="quantity" placeholder="Number of Codes" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="characters">Characters Set:</label>
+            <input type="text" id="characters" placeholder="e.g. ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789">
+        </div>
+
+        <button id="generate-btn" class="btn">Generate Codes</button>
+        <button id="copy-btn" class="btn">Copy All Codes</button>
+
+        <div id="codes-output" class="codes-output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
